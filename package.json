@@ -7,6 +7,7 @@
     "prettier": "prettier --write **/*.json **/*.yml src/instruments/**/*.css",
     "build:instruments": "rollup -c src/instruments/rollup.config.js",
     "build:fmgc": "rollup -c src/fmgc/rollup.config.js",
+    "build:fbw": "cd src/fbw && ./build.sh",
     "postinstall": "husky install"
   },
   "lint-staged": {
