@@ -75,6 +75,7 @@ if [ -z "$1" ]; then
     build_fmgc
     build_behavior
     build_model
+    build_fbw
 else
     name="build_${1}"
     set -x
@@ -84,4 +85,3 @@ fi
 # always invoke manifest+metadata because fast and useful
 build_manifests
 build_metadata
-build_fbw
